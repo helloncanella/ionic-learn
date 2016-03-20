@@ -1,0 +1,11 @@
+<ion-view view-title="Current Weather - London">
+  <ion-content>
+    <div class="list">
+      <div class="item">Current Temperature: {{weather.main.temp}}&degC</div>
+      <div class="item">Humidity: {{weather.main.humidity}}%</div>
+      <div class="item">Today's High: {{weather.main.temp_max}}&degC</div>
+      <div class="item">Today's Low: {{weather.main.temp_min}}&degC</div>
+      <div class="item">Wind: {{weather.wind.speed}}mph, {{getDirection(weather.wind.deg)}}</div>
+    </div>
+  </ion-content>
+</ion-view>
